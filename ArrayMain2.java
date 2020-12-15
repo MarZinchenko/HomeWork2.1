@@ -1,6 +1,6 @@
-//2.2.2
+//2.4.2
 
-package homeWork2.arrays;
+package homework2.arrays;
 
 import java.util.Scanner;
 
