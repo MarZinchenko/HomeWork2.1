@@ -1,11 +1,10 @@
-//2.2.1
+//2.4.6
 
 package homework2.arrays;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayMain5 {
+public class ArrayMain11 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите размер массива: ");
@@ -15,6 +14,10 @@ public class ArrayMain5 {
         for (int i = 0; i < n; i++) {
             container[i] = in.nextInt();
         }
-        System.out.println("Исходный массив: " + Arrays.toString(container));
+        int sum = 0;
+        for (int j : container) {
+            sum = sum + j;
+        }
+        System.out.println("Сумма цифр массива: " + sum);
     }
 }

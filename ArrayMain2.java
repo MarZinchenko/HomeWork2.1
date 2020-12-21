@@ -10,23 +10,18 @@ public class ArrayMain2 {
         System.out.println("Введите размер массива: ");
         int n = in.nextInt();
         int[] container = new int[n];
-        System.out.println("Исходный массив: ");
-
-        for (int m = 0; m < n; m++) {
-            container[m] = (int) (Math.random() * 20);
-            System.out.print(container[m] + "\t");
+        System.out.println("Введите элементы массива: ");
+        for (int i = 0; i < n; i++) {
+            container[i] = in.nextInt();
         }
-        System.out.println("\nЭлементы массива с четными индексами: ");
+
+        int max = container[0];
+
         for (int m = 0; m < container.length; m += 2) {
-            System.out.println(container[m] + "\t");
-        }
-            int max = container[0];
-
-            for (int m = 1; m < container.length; m++) {
-                if (container[m] > max) {
-                    max = container[m];
-                }
+            if (container[m] > max) {
+                max = container[m];
             }
-            System.out.println("Максимальный элемент в массиве: " + max);
+        }
+        System.out.println("Максимальный элемент массива с четным индексом: " + max);
     }
 }

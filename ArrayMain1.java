@@ -10,12 +10,10 @@ public class ArrayMain1 {
         System.out.println("Введите размер массива: ");
         int n = in.nextInt();
         int[] container = new int[n];
-        System.out.println("Исходный массив: ");
+        System.out.println("Введите элементы массива: ");
         int sum = 0;
-
-        for (int m = 0; m < n; m++) {
-            container[m] = (int) (Math.random() * 20);
-            System.out.print(container[m] + "\t");
+        for (int i = 0; i < n; i++) {
+            container[i] = in.nextInt();
         }
         for (int i : container)
             if ((i > 0) && (i % 2 == 0)) {
